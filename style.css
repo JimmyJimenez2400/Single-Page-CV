@@ -7,18 +7,144 @@
 body{
     font-family: 'Courier New', Courier, monospace;
     font-family: 1rem;
+    padding: 3em 1em
 }
 
 img{
     max-inline-size: 100%;
     block-size: auto;
     display: block;
+    object-fit: cover;
+}
+
+ul{
+    list-style: none;
 }
 
 
 /* Typography */
 
+.personal-name{
+    padding-top: 0.5em;
+    margin-bottom: 0.5em;
+    font-size: 1.9rem;
+}
 
+.position{
+    color: green;
+    font-weight: 700;
+    margin-bottom: 0.9em;
+    font-size: 1rem;
+}
 
+.skill-title, .education-title, .experience-title{
+    font-size: 1rem;
+    color: green;
+    font-weight: 700;
+}
+
+.education-school, .experience-company-name{
+    color: rgba(32, 32, 202, 0.76);
+    font-weight: 800;
+    font-size: 1.2rem;
+}
+
+.education-experience{
+    list-style:circle;
+}
+
+.experience-skills, .experience-achievements{
+    list-style: circle;
+}
+
+.experience-skill-title{
+    font-weight: 600;
+    margin-bottom: 0.5em;
+}
+
+.internet-title{
+    font-size: 1rem;
+}
+
+.social-button{
+    border: none;
+    padding: 1em 3em;
+    background-color: black;
+    cursor: pointer;
+}
+
+.social-button a{
+    text-decoration: none;
+    color: white;
+    font-weight: 900;
+    font-size: 0.9rem;
+}
 
 /* Layout */
+.container{
+    width: 95%;
+    max-width: 1800px;
+    margin: 0 auto;
+}
+
+.container-flex{
+    display: flex;
+    flex-direction: column;
+}
+
+.personal-location{
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 1em;
+}
+
+header{
+    border-top: 3px solid black;
+}
+
+.skills, .education, .experience{
+    margin-bottom: 2em;
+}
+
+.skill-title, .education-title, .experience-title{
+    margin-bottom: .8em;
+}
+
+.skills-list{
+    display: flex;
+}
+
+.skill::after{
+    content: ', ';
+}
+
+.skill:last-child::after{
+    content: '';
+}
+
+.education-top{
+    margin-bottom: 1em;
+}
+
+.experience-middle, .experience-bottom, .experience-top{
+    margin-bottom: 1em;
+}
+
+.social-links{
+    display: flex;
+    gap: 90px;
+    align-items: center;
+}
+
+.github, .LinkedIn{
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
+}
+
+.LinkedIn img{
+    height: 200px;
+    width: 100%;
+    object-fit: contain;
+}
