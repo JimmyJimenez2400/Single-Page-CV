@@ -14,3 +14,6 @@ Key requirements for this project:
 1. Clone the repository:
    ```bash
    git clone https://github.com/username/repository.git
+
+## Result:
+![image](https://github.com/user-attachments/assets/785ccd53-4560-4f74-a727-f4626ac2a887)
