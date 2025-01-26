@@ -1,10 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Single Page CV">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="./img/solo.png">
+    <meta property="og:description" content="Showcasing my single page CV">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="./style.css">
     <title>Single-Page CV</title>
 </head>
+
 <body>
     <header class="container container-flex">
         <h1 class="personal-name">Jimmy Jimenez</h1>
@@ -13,32 +24,38 @@
             <p class="personl-street">Dummy text</p>
             <p class="personal-city">Dummy text</p>
             <p class="personal-cell">Dummy</p>
-            <p class="personal-email"></p>
+            <p class="personal-email">Randomemail.com</p>
         </article>
     </header>
     <main class="container container-flex">
         <article class="skills">
+            <h2 class="skill-title">Skills</h2>
             <ul class="skills-list">
-                <li class="skill"></li>
-                <li class="skill"></li>
-                <li class="skill"></li>
+                <li class="skill">HTML</li>
+                <li class="skill">CSS</li>
+                <li class="skill">Javascript</li>
+                <li class="skill">Accessibility</li>
+                <li class="skill">Responsive Web Design</li>
             </ul>
         </article>
         <article class="educaiton">
+            <h2 class="education-title">Education</h2>
             <section class="education-top">
-                <h2 class="education-school"></h2>
-                <p class="education-duration"></p>
+                <p class="education-school">John Jay College of Criminal Justice, New York - Computer Science</p>
+                <p class="education-duration">September 2018 to November 2022</p>
             </section>
             <section class="education-bottom">
                 <ul class="education-experience">
-                    <li></li>
+                    <li>Object-Oritented Programming</li>
+                    <li>Attended Bootcamp for Web Development</li>
                 </ul>
             </section>
         </article>
         <article class="experience">
+            <h2 class="experience-title">Experience</h2>
             <section class="experience-top">
-                <h2 class="experience-title"></h2>
-                <p class="experience-duration"></p>
+                <p class="experience-title">Alma, New York - Customer Support Represenative</p>
+                <p class="experience-duration">May 2023 to October 2024</p>
             </section>
             <section class="experience-middle">
                 <ul class="experience-achievements">
@@ -54,9 +71,10 @@
             </section>
         </article>
         <article class="internet">
+            <h2 class="internet-title">Across the Internet</h2>
             <section class="github">
-                <img src="" alt="">
-                <p>Github</p>
+                <img src="./img/github-mark.png" alt="Github's logo">
+                <button><a href="">Github</a></button>
             </section>
             <section class="LinkedIn">
                 <img src="" alt="">
@@ -65,4 +83,5 @@
         </article>
     </main>
 </body>
+
 </html>
